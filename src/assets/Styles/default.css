@@ -19,6 +19,9 @@
     --tertiary-700: #8a63ff;
     --tertiary-800: #6b3dff;
     --tertiary-900: #4D00E0;
+
+    --back-light: #fff;
+    --back-dark: #000;
 }
 
 body {
