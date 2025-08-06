@@ -1,23 +1,28 @@
-header.nav::after {
+header nav {
+    width: 100%;
+    height: 12.5vh;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(44, 83, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(44, 83, 255, 0.15), 0 1px 0 rgba(13, 188, 79, 0.1);
+}
+
+header nav::after {
     content: "";
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-100), var(--secondary-900), var(--tertiary-900));
+    background: linear-gradient(90deg, var(--primary-100), var(--secondary-700), var(--tertiary-700));
 }
 
-header.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -50;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-}
-
-header.nav .nav-container {
+header nav .nav-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,15 +43,15 @@ header.nav .nav-container {
     }
 }
 
-header.nav .nav-container .logo {
+header nav .nav-container .logo {
     font-size: 1.1rem;
     position: relative;
 }
 
-header.nav .nav-container .logo::after {
+header nav .nav-container .logo::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 2px;
     right: -4px;
     width: 8px;
     height: 8px;
@@ -55,16 +60,17 @@ header.nav .nav-container .logo::after {
     animation: pulse 3s infinite;
 }
 
-header.nav .nav-container .logo span {
+header nav .nav-container .logo span {
     color: var(--primary-300);
+    text-shadow: 0 0 10px var(--primary-500);
 }
 
-header.nav .links ul, li  {
+header nav .links ul, li  {
     display: flex;
     text-decoration: none;
 }
 
-header.nav .links a {
+header nav .links a {
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
@@ -73,17 +79,17 @@ header.nav .links a {
     position: relative;
 }
 
-header.nav .links a::before {
+header nav .links a::before {
     content: '';
     position: absolute;
     bottom: -4px;
     left: 0;
-    width: 0;
+    width: 0%;
     height: 2px;
     background: linear-gradient(90deg, var(--primary-100), var(--secondary-900));
     transition: width 0.3s ease;
 }
 
-header.nav .links a:hover::before {
+header nav .links a:hover::before {
     width: 100%;
 }
