@@ -32,6 +32,7 @@
     --back-dark: #000;
     --text-dark: #fff;
     --text-light: #000;
+    --text-color-light: #424242;
 }
 
 body {
