@@ -12,7 +12,7 @@ function Header () {
                 <div className="links">
                     <ul>
                         <li><a href="#home">Início</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#projects">Contato</a></li>
                         <li><a href="">Projetos</a></li>
                         <li><a href="">Certificados</a></li>
                         <li><a href="">Habilidades</a></li>
