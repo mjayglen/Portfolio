@@ -19,7 +19,13 @@ function Certificates() {
             title: "NLW #20",
             conclusion: "Concluído em 11 de Julho de 2025",
             link: "https://app.rocketseat.com.br/certificates/c92b616f-baf1-4025-8c3a-299908473108"
-        }
+        },
+        {
+            img: rocketseat,
+            title: " Posicionamento nas redes sociais",
+            conclusion: "Concluído em 18 de Julho de 2025",
+            link: "https://app.rocketseat.com.br/certificates/3c6c066f-f4b5-485a-b465-9e47476adcce"
+        },
     ]
 
     const visibleCertificates = showAllCertificates ? certificates : certificates.slice(0, 3)
