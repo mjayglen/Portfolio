@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LiaCertificateSolid } from "react-icons/lia";
 import './Certificates.css'
 
 
@@ -46,7 +47,7 @@ function Certificates() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >
-                                    Ver Certificado
+                                   <LiaCertificateSolid/> Ver Certificado
                                 </a>
                         </div>
                     ))}

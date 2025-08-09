@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaGithub } from 'react-icons/fa'
 import './Projects.css';
 
 import npm from '../../images/Projects/npm.png';
@@ -81,7 +82,7 @@ function Projects() {
                                 target="_blank" 
                                 rel="noopener noreferrer"
                             >
-                                <i className="bi bi-github"></i> Ver no Github
+                                <FaGithub /> Ver no Github
                             </a>
                         </div>
                     ))}

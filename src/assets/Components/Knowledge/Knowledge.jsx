@@ -1,4 +1,14 @@
 import React from "react";
+
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { TbFileTypeJsx } from "react-icons/tb";
+import { FaBootstrap } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { FaGitAlt } from "react-icons/fa";
+import { IoLogoFigma } from "react-icons/io5";
+
 import './Knowledge.css'
 
 function Knowledge () {
@@ -11,23 +21,23 @@ function Knowledge () {
                     <div className="knowledge-content">
                         <div className="knowledge-grid">
                             <div className="tech-itens">
-                                <i className="bi bi-filetype-html"></i>
+                                <FaHtml5 className="icon"/>
                                 <span>HTML</span>
                             </div>
                             <div className="tech-itens">
-                                <i className="bi bi-css"></i>
+                                <FaCss3 className="icon"/>
                                 <span>CSS</span>
                             </div>
                             <div className="tech-itens">
-                                <i className="bi bi-javascript"></i>
+                                <RiJavascriptFill className="icon"/>
                                 <span>JAVASCRIPT</span>
                             </div>
                             <div className="tech-itens">
-                                <i className="bi bi-filetype-jsx"></i>
+                                <TbFileTypeJsx className="icon"/>
                                 <span>REACT</span>
                             </div>
                             <div className="tech-itens">
-                                <i className="bi bi-bootstrap-fill"></i>
+                                <FaBootstrap className="icon"/>
                                 <span>BOOTSTRAP</span>
                             </div>
                         </div>
@@ -41,15 +51,15 @@ function Knowledge () {
                     <div className="knowledge-content">
                         <div className="knowledge-grid">
                             <div className="tech-itens">
-                                <i className="bi bi-code-slash"></i>
+                               <VscVscode className="icon"/>
                                 <span>vs code</span>
                             </div>
                             <div className="tech-itens">
-                                <i className="bi bi-git"></i>
+                                <FaGitAlt className="icon"/>
                                 <span>Git</span>
                             </div>
                             <div className="tech-itens">
-                                <i className="bi bi-palette"></i>
+                                <IoLogoFigma className="icon"/>
                                 <span>Figma</span>
                             </div>
                         </div>
