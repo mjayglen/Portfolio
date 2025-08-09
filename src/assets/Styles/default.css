@@ -32,7 +32,6 @@
     --back-dark: #000;
     --text-dark: #fff;
     --text-light: #000;
-    --text-color-light: #424242;
 }
 
 body {
@@ -46,4 +45,203 @@ body {
 section {
     padding-top: 20.5vh;
     margin-bottom: 3px;
+}
+
+/*
+**** Responsividade
+*/
+
+@media (max-width: 428px){
+    section.hero .main-container .image{
+        width: 375px;
+        height: 375px;
+    }
+
+    section.hero .main-container .text-hero h1{
+        font-size: 0.7em;
+    }
+
+    section.hero .main-container .text-hero p{
+        font-size: clamp(0.35em, 0.15em + 8.5vw, 0.95em);
+    }
+}
+
+@media (max-width: 390px){
+    section.hero .main-container .image{
+        width: 350px;
+        height: 350px;
+    }
+
+    section.hero .main-container .text-hero h1{
+        font-size: 0.7em;
+    }
+
+    section.hero .main-container .text-hero p{
+        font-size: clamp(0.3em, 0.1em + 8vw, 0.9em);
+    }
+}
+
+@media (max-width: 375px){
+    section.hero .main-container .image{
+        width: 300px;
+        height: 300px;
+    }
+
+    section.hero .main-container .text-hero h1{
+        font-size: 0.7em;
+    }
+
+    section.hero .main-container .text-hero p{
+        font-size: clamp(0.2em, 0em + 7vw, 0.8em);
+    }
+}
+
+@media (max-width: 884px) {
+    nav .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-container button {
+        margin-top: 15px;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .social-links .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container .image {
+        z-index: -1;
+        width: 50%;
+        height: 60%;
+    }
+
+    .nav-controls {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+
+    .main-container .image {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .projects {
+        padding: 3rem 1rem;
+    }
+
+    .projects-grid {
+        gap: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #knowledge {
+        padding: 4rem 1rem;
+    }
+
+    .knowledge-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .knowledge-item {
+        padding: 1.5rem;
+    }
+
+    .knowledge-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 1rem;
+    }
+
+    .tech-item {
+        padding: 0.8rem;
+    }
+
+    .tech-item .icon {
+        font-size: 1.5rem;
+    }
+
+    .tech-item span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .knowledge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-item {
+        padding: 0.6rem;
+    }
+
+    .tech-item .icon {
+        font-size: 1.3rem;
+    }
+
+    .tech-item span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:440px) {
+    .main-container .image {
+        width: 50%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .main-container .content {
+        width: 90%;
+        padding: 0 1rem;
+    }
+
+    .main-container button {
+        margin-top: 15px;
+        width: 100%;
+    }
 }
